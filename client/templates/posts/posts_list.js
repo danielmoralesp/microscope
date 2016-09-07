@@ -1,3 +1,6 @@
+/* 
+INICIO CODIGO MANUAL DE LOS PRIMEROS CAPITULOS
+
 var postsData = [
   {
     title: 'Introducing Telescope',
@@ -14,4 +17,13 @@ var postsData = [
 ];
 Template.postsList.helpers({
   posts: postsData
+});
+
+FIN CODIGO MANUAL DE LOS PRIMEROS CAPITULOS 
+*/
+
+Template.postsList.helpers({
+  posts: function() {
+    return Posts.find();
+  }
 });
