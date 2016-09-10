@@ -27,3 +27,5 @@ npm-bcrypt@0.8.7
 stylus
 ian:accounts-ui-bootstrap-3
 accounts-password
+audit-argument-checks
+check
