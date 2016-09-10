@@ -11,8 +11,9 @@ Template.postSubmit.events({
 
     post._id = Posts.insert(post);
     Router.go('postPage', post);
-
-    */
+	
+	*/
+    
 
     Meteor.call('postInsert', post, function(error, result) {
       // display the error to the user and abort
@@ -23,8 +24,11 @@ Template.postSubmit.events({
       if (result.postExists)
         alert('This link has already been posted');
 
-      // Router.go('postPage', {_id: result._id});
+      Router.go('postPage', {_id: result._id});
+      
+      /*  COMPENSACION DE LATENCIA
       Router.go('postsList');
+      */
 
     });
   }
