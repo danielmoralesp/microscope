@@ -22,8 +22,12 @@ Template.postsList.helpers({
 FIN CODIGO MANUAL DE LOS PRIMEROS CAPITULOS 
 */
 
+
+/* SE ELIMINA PORQUE EN LA RUTA SE PUSO EL CONTEXTO DE DATOS DE LA PAGINACION
 Template.postsList.helpers({
   posts: function() {
     return Posts.find({}, {sort: {submitted: -1}});
   }
 });
+
+*/
